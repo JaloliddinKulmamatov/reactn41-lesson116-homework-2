@@ -1,0 +1,438 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins-Regular.ttf);
+}
+
+
+
+:root {
+    --href-color: #8B8E99;;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    background-image: url(/img/backround.svg);
+    font-family: "Poppins";
+}
+
+.light * {
+    color: #FFF !important;
+}
+
+.news-model-1-text p  {
+    color: #000 !important;
+}
+
+
+.light header {
+    background-color: #000 !important;
+}
+
+.light section {
+    background-color: #000 !important;
+}
+
+.light footer {
+    background-color: #000;
+}
+.container {
+    max-width:  1140px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    background-color: #000;
+    width: 100vw;
+    z-index: 99;
+    transition: 1s;
+}
+
+nav {
+    padding: 30px 0;
+}
+
+
+.navbar-shrink {
+    padding: 20px 0;
+    box-shadow: 0px 0px 10px 5px #2c2c2c
+}
+
+
+
+
+.nav-2 {
+    display: flex;
+    padding: 18px 0 23px 0px;
+}
+
+.home-logo {
+    align-items: center;
+    text-align: center;
+    display: flex;
+   
+}
+
+.home-logo h4 {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 217px;
+    
+}
+
+.nav-ul {
+    display: flex;
+    gap: 27px;
+    margin-right: 217px;
+}
+
+.nav-li {
+    list-style-type: none;
+
+    
+}
+
+.nav-li a {
+    text-decoration: none;
+    color: var(--href-color);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+   
+}
+.nav-li a:hover{
+    text-decoration:underline;
+    color: var(--href-color);
+    color: #FFF;
+}
+
+
+.home-left {
+    padding: 224px 0 190px 0;
+    display: inline-block;
+    margin-right: 184px;
+}
+
+.home-left h1{ 
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 125.5%;
+    margin-bottom: 30px;
+}
+
+.home-left p {
+    color: #8B8E99;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 125.5%;
+    margin-bottom: 47px;
+}
+
+.home-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 460px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.home-search input {
+    padding: 12px 70px 12px 20px;
+    border: none;
+    font-size: 16px;
+}
+
+.home-search a {
+    font-size: 18px;
+    color: white;
+    padding: 12px 27px;
+    background-color: #3858D6;
+    border-radius: 9px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+
+.home-right {
+    display: inline-block;
+    margin-top: 102px;
+}
+
+.news-start {
+    display: flex;
+    gap: 20px;
+   padding-top: 73px;
+    font-family: sans-serif;
+    margin-bottom: 135px;
+  
+}
+
+.news-model-1 {
+    display: flex;
+    padding: 45px 30px 45px 40px;
+    background-color: #F6F6F6;
+    border-radius: 22px;
+}
+
+.news-model-1 img {
+    margin-right: 26px;
+}
+
+.news-start h1 {
+    color: #1E1D1D;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.news-main {
+    font-family: "Poppins";
+}
+
+.news-main-text p{
+    color: #3858D6;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+    
+.news-main h1 {
+    color: #1E1D1D;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 65px;
+}
+
+.card {
+     position: relative;
+}
+
+.card img {
+    background-color: #F6F6F6;
+    padding: 29px 43px 28px 41px;
+    margin-bottom: 11px;
+}
+
+.card h2 {
+    color: #1E1D1D;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 7px;
+ }
+
+.stars{
+    padding: 0px !important; 
+}
+
+.news-prices {
+    display: flex;
+    
+}
+
+.overline {
+    text-decoration: line-through;
+    color: #8B8E99;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120.5%;    
+}
+
+.price {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120.5%;
+}
+
+.news-main-card {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 64px;
+}
+
+
+.hover-img {
+    position: absolute;
+    left: 44%;
+    top: 0;
+    transition: 0.5s;
+    opacity: 0;
+   
+
+} 
+
+
+.card:hover .hover-img { 
+    left:63%;
+    opacity: 0.8;
+}
+
+.card:hover .icons {
+    display: block;
+}
+
+.news-main-card-2 {
+    display: flex;
+    gap: 50px;
+}
+
+.news-main-card-2 {
+  padding-bottom: 70px;
+}
+
+.main-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 135px;
+}
+.view-more {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #3858D6;
+    padding: 10px 5px;
+    border-radius: 10px;
+    width: 196px;
+    height: 46px;
+}
+
+.carousel-text p{
+    color: #3858D6;
+    text-align: center;
+    font-family:sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.carousel-text h1 {
+    color: #1E1D1D;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 55px;
+}
+
+
+
+.carousel-pages {
+    display: flex;
+    padding: 30px 0 30px 34px;
+    border-radius: 22px;
+    background: #F6F6F6;
+    gap: 47px;
+}
+
+.pages-left {
+    margin-left: 28px;
+}
+
+
+
+.pages-left h2{
+    color: #1E1D1D;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pages-left p {
+    color: #8B8E99;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#subscribe {
+    border-radius: 22px;
+     background: #F6F6F6;
+     margin-top: 135px;
+     padding: 107px 110px 117px 97px;
+}
+
+.subscribe-left {
+    display: inline-block;
+}
+
+.subscribe-left h1 {
+    color: #1E1D1D;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.subscribe-left p {
+    color: #8B8E99;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.email {
+    padding: 20px 9px 20px 30px;
+    display: inline-block;
+    border-radius: 15px;
+     background: #FFF;
+}
+
+.email input {
+    border: none;
+    font-size: 15px;
+}
+
+.email label {
+    background: #3858D6;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 27px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.subscribe-right {
+    display: inline-block;
+    margin-left: 187px;
+}
+
+#foot {
+    display: flex;
+    padding: 23px 0px 22px 0px;
+    justify-content: center;
+    align-items: center;
+    background: #0B0B0B;
+}
+
+#foot p {
+    color: #FFF;
+    font-family: "Poppins"; 
+    font-size: 16px;
+    font-weight: 500;
+}
